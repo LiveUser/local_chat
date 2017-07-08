@@ -14,7 +14,7 @@ function user(){
           document.getElementById('chat').innerHTML+='<p><span class="msg">'+this.responseText+'</span></p>';
           document.getElementById('message').focus();
     };
-    xmlHttp.open("GET",'http://10.0.0.69:8080/login', true); // true for asynchronous 
+    xmlHttp.open("GET",'http://ServerIP:8080/login', true); // true for asynchronous 
     xmlHttp.send(null);
     
   }else{alert("Username Must Be Longer than 1 Letter");}
@@ -30,7 +30,7 @@ function send(){
   pack.message=document.getElementById('message').value;
   document.getElementById('message').value='';
   var request = new XMLHttpRequest();
-  request.open('POST','http://10.0.0.69:8080/msg');
+  request.open('POST','http://ServerIP:8080/msg');
   request.setRequestHeader('Content-type','application/json');
   request.send(pack.username+': '+pack.message);
   }else{alert("Message Must Be Longer than 1 Letter");
@@ -51,7 +51,7 @@ function logout(){
           document.getElementById('chat').innerHTML+='<p><span class="msg">'+this.responseText+'</span></p>';
           document.getElementById('message').focus();
     };
-    xmlHttp.open("GET",'http://10.0.0.69:8080/logout', true); // true for asynchronous 
+    xmlHttp.open("GET",'http://ServerIP:8080/logout', true); // true for asynchronous 
     xmlHttp.send(null);
 }
 //post taken from https://stackoverflow.com/questions/5584923/a-cors-post-request-works-from-plain-javascript-but-why-not-with-jquery
