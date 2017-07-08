@@ -1,0 +1,17 @@
+{
+  "name": "localchat",
+  "version": "1.0.0",
+  "description": "first no socket real-time chat",
+  "main": "main.js",
+  "dependencies": {
+    "electron": "^1.6.11",
+    "unirest": "^0.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node main.js",
+    "start": "electron main.js"
+  },
+  "author": "Radames Valentin",
+  "license": "MIT"
+}

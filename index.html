@@ -1,0 +1,20 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css "/>
+        <script src="script.js"></script>
+    </head>
+    <body onload="initialized();" onbeforeunload="logout();">
+        <div id='welcome'>
+            <img id='logo' src='logo.svg'/>
+            <p>Input Your UserName</p>
+            <input onkeypress="fastUser(event);" id="username"></input>
+            <div><span id="userbtn" onclick="user();">Submit</span></div>
+        </div>
+        <textarea onkeypress="fastSend(event);" id="message"></textarea>
+        <div id='send' onclick="send();">Send</div>
+        <div id='chat'><!--<p><span class="msg">This is a message</span></p><p><span class="msg">This is a message</span></p>--></div>
+        <div id="bottom">Latest Message</div>
+    </body>
+</html>

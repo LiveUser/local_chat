@@ -1,0 +1,81 @@
+body{
+   padding: 0;
+   margin: 0;
+}
+#welcome{
+   text-align: center;
+   position: fixed;
+   z-index: 2;
+   left: 0;
+   display: block;
+   background-color: white;
+   width: 100%;
+   height: 100vh;
+   font-size: 40px;
+   color: #3db3fa;
+}
+#username{
+   font-size: 24px;;
+}
+#userbtn{
+   background-color: #3db3fa;
+   color: white;
+}
+#userbtn:hover{
+   background-color: white;
+   color: #3db3fa;
+}
+#logo{
+   height: 50vh;
+}
+#message{
+   border: 0;
+   position: fixed;
+   height: 10vh;
+   width: 90%;
+   font-size: 30px;
+   background-color: #df5a3e;
+   color: white;
+   left: 0;
+}
+#message:hover{
+   height: 26vh;
+}
+#message:focus{
+   background-color: #f42a04;
+}
+#send{
+   border: 0;
+   position: fixed;
+   height: 10vh;
+   width: 10%;
+   left: 90%;
+   background-color: #527fcb;
+   font-size: 30px;
+   text-align: center;
+   vertical-align: middle;
+   line-height: 10vh;
+   color: white;
+}
+#send:hover{
+   color: #527fcb;
+   background-color: white;
+}
+#chat{
+   padding-top: 10vh;
+   font-size: 26px;
+}
+.msg{
+   border-radius: 3px;
+   padding: 5px;
+   margin: 10px;
+   background-color: #3db3fa;
+   color: white;
+}
+#bottom{
+   width: 100%;
+   text-align: center;
+   background-color: #003366;
+   color: white;
+   font-size: 40px;
+}
